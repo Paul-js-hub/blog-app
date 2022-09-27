@@ -1,24 +1,63 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blog app
 
-Things you may want to cover:
+> This is a blog website that show the list of posts and allow users to add comments and likes on them
 
-* Ruby version
+## Built With
 
-* System dependencies
+- HTML & CSS
+- JavaScript
+- Ruby
+- Ruby on Rails
+- Rubocop
+- Rspec
+- OOP
 
-* Configuration
+## Demo
 
-* Database creation
+[Visit demo page](Coming Soon)
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+- copy this link `https://github.com/Paul-js-hub/blog-app`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `git clone https://github.com/Paul-js-hub/blog-app`.
+- go to the repository folder in your command prompt.
+- run `bundle install`.
+- run `npm install`
+- create database in your postgre called `blog_app_development`
+- run `rails db:migrate`
+- To run the test run `rspec` in your command prompt.
+- To run the rails server run  `rails s` in your command prompt.
 
-* ...
+## Author
+
+
+👤 **Paul Onchera**
+
+- GitHub: [@paulonchera](https://github.com/Paul-js-hub)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/paul-onchera/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
