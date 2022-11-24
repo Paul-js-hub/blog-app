@@ -47,7 +47,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://guides.rubyonrails.org/">Express.js</a></li>
+    <li><a href="https://guides.rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
