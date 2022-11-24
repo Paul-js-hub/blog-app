@@ -16,11 +16,9 @@
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -37,7 +35,7 @@
 - Ruby on Rails
 - Rubocop
 - Rspec
-- OOP
+- Postgresql
 
 <details>
   <summary>Client</summary>
@@ -63,8 +61,6 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](Coming soon)
 
