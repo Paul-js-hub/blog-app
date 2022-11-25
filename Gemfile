@@ -72,3 +72,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.1'
+end
