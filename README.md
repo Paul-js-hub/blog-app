@@ -80,7 +80,7 @@ To get a local copy up and running follow these simple example steps.
 - run `npm install`
 - create database in your postgres called `blog_app_development`
 - run `rails db:migrate`
-- To run the test run `bin/rails spec` in your command prompt.
+- To run the test run `bundle exec rspec` in your command prompt.
 - To run the rails server run  `rails s` in your command prompt.
 
 
