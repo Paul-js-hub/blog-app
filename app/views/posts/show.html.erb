@@ -1,1 +1,14 @@
 <h1>This page displays a specific post belonging to a specific user</h1>
+
+<div style='border: 1px solid gray; margin: 4.0px 3.0px 2.0px 1.0px' >
+<h3>Post <%=@post.id %> by <%= @user.name%></h3>
+<p>Comments:<%= @post.comments_counter%></p>
+<p>Likes:<%= @post.likes_counter%></p>
+<p><%= @post.text %></p>
+</div>
+
+<div style='border: 1px solid gray'>
+<% @comments.each do |comment| %>
+    <p><strong><%= User.find(comment.user_id).name %>: <%= comment.text %></strong></p>
+<% end %>
+</div>

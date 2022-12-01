@@ -1,1 +1,12 @@
 <h1>This page displays a list of all users</h1>
+
+<% @users.each do |user| %>
+ <div>
+ <p>User photo</p>
+ </div>
+ <div style='border: 1px solid gray'>
+ <h3>Name: <%= user.name %></h3>
+ <p>Number of posts: <%= user.posts_counter %></p>
+ <p><%= link_to "User details", user_path(user.id) %></p> <br>
+ </div>
+<% end %>
