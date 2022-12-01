@@ -2,16 +2,16 @@
 <div>
 <p>User Photo</p>
 </div>
-<div style='border: 1px solid gray'>
+<div style='border: 1px solid gray; margin: 4.0px 3.0px 2.0px 1.0px'>
 <h3><%= @user.name %></h3>
 <p>Number of posts: <%= @user.posts_counter %></p>
 </div>
-<div style='border: 1px solid gray'>
+<div style='border: 1px solid gray; margin: 4.0px 3.0px 2.0px 1.0px'>
 <h4>Bio</h4>
 <p><%= @user.bio%></p>
 </div>
 <% @user.three_recent_posts.each do |post| %>
-    <div style='border: 1px solid gray'>
+    <div style='border: 1px solid gray; margin: 4.0px 3.0px 2.0px 1.0px'>
     <p>Post: <%= post.id %></p>
     <p><%= post.text %></p>
     <p>Comments: <%= post.comments_counter %></p>
