@@ -1,0 +1,12 @@
+<h1>Add new post</h1>
+<%= form_with model: @post, method: :post, local: true do |form| %>
+  <div>
+  <%= form.label :title %><br>
+  <%= form.text_field :title %>
+  </div>
+  <div>
+  <%= form.label :text %><br>
+  <%= form.text_area :text, size: "60*60" %>
+  </div>
+  <%= form.submit "Add Post" %>
+<% end %>
