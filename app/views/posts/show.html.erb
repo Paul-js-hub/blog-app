@@ -6,7 +6,12 @@
 <p>Likes:<%= @post.likes_counter%></p>
 <p><%= @post.text %></p>
 </div>
-
+<div>
+<%= render "like", post: @post %>
+</div>
+<div>
+<%= render "comment", post: @post %>
+</div>
 <div style='border: 1px solid gray'>
 <% @comments.each do |comment| %>
     <p><strong><%= User.find(comment.user_id).name %>: <%= comment.text %></strong></p>
