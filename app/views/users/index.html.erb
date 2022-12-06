@@ -4,9 +4,8 @@
  <div>
  <p>User photo</p>
  </div>
- <div style='border: 1px solid gray'>
- <h3>Name: <%= user.name %></h3>
+ <div style='border: 1px solid gray'user_path(user.id)>
+ <h3>Name: <%= link_to user.name, user_path(user.id) %></h3>
  <p>Number of posts: <%= user.posts_counter %></p>
- <p><%= link_to "User details", user_path(user.id) %></p> <br>
  </div>
 <% end %>
