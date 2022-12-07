@@ -1,6 +1,6 @@
 <h1>This page displays a list of all posts for a specific user</h1>
 <div>
-<p>User Photo</p>
+<div class='user-icon'>User Photo</div>
 </div>
 <div style='border: 1px solid gray; margin: 4.0px 3.0px 2.0px 1.0px'>
 <h3><%= @user.name %></h3>
@@ -10,15 +10,18 @@
 <% @posts.each do |post| %>
     <div style='border: 1px solid gray; margin: 4.0px 3.0px 2.0px 1.0px'>
     <h3>Post: <%= post.id%></h3>
+    <%= link_to user_post_path(@user, post.id) do %>
     <strong><%= post.title %></strong> 
+    <% end %>
     <p><%= post.text%></p>
     <p>Comments: <%= post.comments_counter%></p>
     <p>Likes: <%= post.likes_counter%></p>
-    <p><%= link_to "Post details", user_post_path(@user, post.id) %></p><br>
     </div>
     <div style='border: 1px solid gray'>
     <% post.five_most_comments.each do |comment| %>
-    <p><strong><%= User.find(comment.user_id).name %>:</strong><%= comment.text %></p>
+    <p><strong><%= comment.user.name %>:</strong><%= comment.text %></p>
     <% end %>
     </div>
 <% end %>
+
+<div class="all-posts"><%= link_to "Pagination", user_posts_path(user_id: @user.id), class: "posts-btn" %></div>

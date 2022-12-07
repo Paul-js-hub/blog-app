@@ -3,7 +3,7 @@ class LikesController < ApplicationController
     @post = Post.find(params[:post_id])
     @like = @post.likes.new(user: current_user)
     respond_to do |format|
-        format.html { redirect_to user_post_path(@post.user.id, @post.id) } if @like.save
+      format.html { redirect_to user_post_path(@post.user.id, @post.id) } if @like.save
     end
   end
 end
