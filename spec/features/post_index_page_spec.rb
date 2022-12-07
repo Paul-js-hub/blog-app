@@ -31,8 +31,8 @@ RSpec.describe 'Post Index  page', type: :feature do
     end
 
     scenario 'I can see the number of posts the user has written' do
-        visit user_posts_path(@user2.id)
-        expect(page).to have_content(4)
+      visit user_posts_path(@user2.id)
+      expect(page).to have_content(4)
     end
 
     scenario 'I can see a post\'s title' do
