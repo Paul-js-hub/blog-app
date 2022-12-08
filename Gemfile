@@ -56,6 +56,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'letter_opener'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 
@@ -75,8 +76,9 @@ end
 
 group :development, :test do
   gem 'database_cleaner'
-  gem 'rspec-rails', '~> 6.0', '>= 6.0.1'
+  gem 'rspec-rails'
 end
 
 gem 'bullet'
+gem 'devise'
 gem 'rails-controller-testing'

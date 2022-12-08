@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+ .welcome {
+    text-align: center;
+    font-size: 2.05rem;
+    font-weight: 700;
+  }
+  
+  .sign-up-container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5c5c5e;
+    margin: 1rem 20rem 1rem 20rem;
+    width: 950px;
+  }
+  
+  .field {
+    margin: 1rem 0 1rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  
+  .sign-up-btn {
+    margin: 1rem 0 1rem 1rem;
+    display: block;
+    border-style: solid;
+    border-width: 4px;
+    height: 30px;
+    width: 150px;
+    box-shadow: 5px 10px #0c0c0c;
+    border-color: #5c5c5e;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  
+  .log-container {
+    margin: 1rem 20rem 1rem 25rem;
+    width: 950px;
+  }
+  
+  .log-btn {
+    margin: 1rem 0 1rem 1rem;
+    display: block;
+    border-style: solid;
+    border-width: 4px;
+    height: 30px;
+    width: 750px;
+    box-shadow: 5px 10px #0c0c0c;
+    border-color: #5c5c5e;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  
+  .flabel {
+    margin: 1rem 0 1rem 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+  
+  .ftext {
+    margin: 1rem 0 1rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    height: 30px;
+    width: 750px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+  }
+  
+  .render {
+    margin: 1rem 0 1rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .finput {
+    margin: 0.45rem 0 1rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    height: 30px;
+    width: 650px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+  }

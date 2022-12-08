@@ -11,6 +11,16 @@
   </head>
 
   <body>
+  <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <div class="nav-bar">
+      <% if user_signed_in? %>
+      <%= link_to 'Home', root_path %>
+      <%= link_to "Sign out", destroy_user_session_path, data: {turbo_method: :delete, turbo_confirm: 'Are you sure you want to logout?'} %>
+      <% else %>
+      <a href="/users/sign_in">Sign in</a>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
