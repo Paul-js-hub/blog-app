@@ -80,5 +80,5 @@ group :development, :test do
 end
 
 gem 'bullet'
-gem 'rails-controller-testing'
 gem 'devise'
+gem 'rails-controller-testing'
