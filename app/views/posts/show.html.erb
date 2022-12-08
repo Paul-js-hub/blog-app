@@ -15,8 +15,5 @@
 <div style='border: 1px solid gray'>
 <% @comments.each do |comment| %>
     <p><strong><%= comment.user.name %>: <%= comment.text %></strong></p>
-    <% if can? :destroy, comment %>
-    <%= button_to "Delete Comment", post_comment_path(@post.id, comment.id), method: :delete %>
-    <% end %>
 <% end %>
 </div>
