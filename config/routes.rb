@@ -16,4 +16,15 @@ Rails.application.routes.draw do
   devise_scope  :user do
     get 'users/sign_out' => 'devise/sessions#destroy'
   end
+
+  namespace :api do
+    namespace :v1 do
+      resources :users, only: [:index, :show] do
+        resources :posts, only: [:index, :show, :destroy] do
+          resources :comments, only: [:index, :create] do
+          end
+        end
+      end
+    end
+  end
 end

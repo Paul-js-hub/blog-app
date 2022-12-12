@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   # Catch all CanCan errors and alert the user of the exception
