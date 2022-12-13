@@ -17,6 +17,8 @@ Rails.application.routes.draw do
     get 'users/sign_out' => 'devise/sessions#destroy'
   end
 
+  get 'users/Authentication'
+
   namespace :api do
     namespace :v1 do
       resources :users, only: [:index, :show] do
@@ -25,6 +27,8 @@ Rails.application.routes.draw do
           end
         end
       end
+      post 'login', to: 'authentication#create'
+     post 'register', to: 'users#create'
     end
   end
 end

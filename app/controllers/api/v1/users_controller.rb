@@ -8,4 +8,17 @@ class Api::V1::UsersController < Api::V1::ApplicationController
     @user = User.find(params[:id])
     render json: @user
   end
+
+  def create
+    @user = User.create(user_params)
+    if @user.save
+      render json: @user, status: 200
+    else
+      render json: {@user.errors.full_messages.first}, status: :unprocessable_entity
+    end
+  end
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :bio)
+  end
 end
