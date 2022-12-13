@@ -9,8 +9,8 @@ class Api::V1::CommentsController < Api::V1::ApplicationController
   def create
     @user = User.find(params[:user_id])
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.new(text: comment_params[:text])
-    if @comment.save
+    @comment = @post.comments.create(comment_params.merge(user: @user))
+    if @comment
       render json: @comment, status: 201
     else
       render json: @comment.errors, status: :unprocessable_entity
