@@ -11,7 +11,7 @@ class Api::V1::AuthenticationController < Api::V1::ApplicationController
       render json: { token: token, exp: time.strftime('%m-%d-%Y %H:%M'),
                      username: @user.name }, status: :ok
     else
-      render json: { error: 'unauthorized' }, status: :unauthorized
+      render json: { error: 'Invalid Login Credentials' }, status: :unauthorized
     end
   end
 end
