@@ -79,6 +79,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+# gem 'bullet'
 gem 'bullet'
 gem 'cancancan'
 gem 'devise'
